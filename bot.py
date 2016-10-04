@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+# Debut de INA
 import os
 import Queue
 import sys
@@ -14,14 +14,14 @@ class Bot(object):
         if not os.path.exists(self.persist_dir):
             os.mkdir(self.persist_dir)
 
-bot = Bot()
+ina = Bot()
 
 def main():
     sys.path += ['plugins']  # so 'import hook' works without duplication
     sys.path += ['lib']
     os.chdir(os.path.dirname(__file__) or '.')  # do stuff relative to the install directory
 
-    print 'Loading plugins'
+    print 'Chargement des plugins...'
 
     # bootstrap the reloader
     eval(compile(open(os.path.join('core', 'reload.py'), 'U').read(),
@@ -29,23 +29,23 @@ def main():
          globals())
     reload(init=True)
 
-    print 'Connecting to IRC'
+    print 'Connection a l\'IRC'
 
     try:
         config()
         if not hasattr(bot, 'config'):
             exit()
     except Exception, e:
-        print 'ERROR: malformed config file:', e
+        print 'ERROR: Mauvaiz confirm:', e
         traceback.print_exc()
         sys.exit()
 
-    print 'Running main loop'
+    print 'Lancement de la function de base principalle'
 
     while True:
-        reload()  # these functions only do things
-        config()  # if changes have occured
-
+        reload() 
+        config()
+        
         for conn in bot.conns.itervalues():
             try:
                 out = conn.out.get_nowait()
