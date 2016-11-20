@@ -1,3 +1,6 @@
+//Pour l'instant ce fichier ne m'aide pas, g gere tt en python
+
+
 /*
 #include <qapplication.h>
 #include <QFont>
@@ -45,13 +48,7 @@ int main(){
 
     //QCoreApplication a();
 
-    //Les classes et tout le reste:
-    homme bali, josua;
-    bali.nom="bali";
-    josua.age=15;
-    josua.manger("patate pilee");
-
-    /*Test de Flux
+    //Test de Flux
     cout<<"Creation de Flux...";
     //string const file("log.txt");
     ofstream flux_fichier("log.txt",ios::app);//pour ajouter apres
@@ -88,8 +85,7 @@ int main(){
     }else{
         cout<<"Erreur de la creation du fichier test...";
     }
-    */
-    /*
+
     cout <<"Initialisation..."<<endl;
     vector<int> tab(4);
     tab[0]=1;
@@ -100,8 +96,7 @@ int main(){
     tab.push_back(9);//On vien d faire un push en ajoutant une valeur a la fin du tablo
     cout<<"\n val4:"<<tab[4]<<endl;
 
-    */
-    /*
+
     //nian way to use for
     cout <<"Combien de valeurs veux tu entrer!??:";
     int n(0);
@@ -110,10 +105,7 @@ int main(){
         cout<<"Valeur"<<i<<endl;
     }
     cout<<"Et hop laaa!!";
-    */
 
-
-    /*
     //Le terrible probleme des espaces dans le string
     string nom;char s;int ag;
     cout<<"ton sexe(M/F):";
@@ -131,35 +123,30 @@ int main(){
     */
 
 
-    /*
+
     //Encore des references, mais en plus cool
     int lolos(0);// Tres tres important
     int& referenceLolos(lolos);
 
     cout<< "LOLO: "<<lolos<<"\nCreation de la reference oKK!!: "<< referenceLolos<<endl;
 
-    */
-    /*
+
     //Petits details oublies dans le dev C++
     int lolo(5);
     cout<< " Valeur de lol: "<<lolo<<endl<<" Valeur de son adresse: "<<&lolo<<endl;
     int *poin=&lolo;
     cout<< "\n Pointeur: "<<poin<<"\n Valeur liant o pointeur:"<<*poin<<endl;
-    */
 
-    /*
     //Acceleration de l'execution d'une fonction
     double dd;
     cout<<"Trouvez le double d'1 nombre:";
     cin>>dd;
     doubl(dd);
-*/
-    /*Principe de la surchage:
+
+    //Principe de la surchage:
     lol();
     lol("S@n1X");
-    */
 
-    /*
     //Utilisation des references
     int ag=5;
     int &R_ag=ag;
@@ -169,9 +156,7 @@ int main(){
     R_ag=15;
     cout <<"ag vaut:"<< ag<<" et R_ag vaut:" <<R_ag <<endl;
     //Etttt ouais, ag conserve le 15 de sa reference!!!
-    */
 
-    /*
     //utilisation de l'allocation memoire
     int *alloc =NULL;
     alloc=new int[20];
