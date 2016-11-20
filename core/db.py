@@ -3,7 +3,8 @@ import sqlite3
 
 
 def get_db_connection(conn, name=''):
-    "returns an sqlite3 connection to a persistent database"
+    
+"Renvoie une connexion sqlite3 à une base de données persistante"
 
     if not name:
         name = '%s.%s.db' % (conn.nick, conn.server)
