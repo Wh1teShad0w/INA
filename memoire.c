@@ -1,6 +1,6 @@
-
+//Jusk'a maintenant je gere tout le traitement en python mais bn xa pourrais changer
 #include <stdio.h>
-#include <memoire.h>
+#include "memory.h"
 
 int main (void)       /*  fonction principale               */
 {
