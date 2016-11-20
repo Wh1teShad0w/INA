@@ -3,7 +3,7 @@ import json
 import os
 
 def find_config():
-    # for backwards compatibility, look for either 'config' or 'config.json'
+    # Pour une compatibilité ascendante, recherchez 'config' ou 'config.json'
     if os.path.exists('config'):
         return 'config'
     return 'config.json'
@@ -45,7 +45,7 @@ if not os.path.exists(find_config()):
 
 
 def config():
-    # reload config from file if file has changed
+    # Recharger config du fichier si le fichier a changé
     config_mtime = os.stat(find_config()).st_mtime
     if bot._config_mtime != config_mtime:
         try:
@@ -60,7 +60,7 @@ def config():
                     else:
                         bot.conns[name] = IRC(conf)
         except ValueError, e:
-            print 'ERROR: malformed config!', e
+            print 'ERROR: dans la configuration!', e
 
 
 bot._config_mtime = 0
