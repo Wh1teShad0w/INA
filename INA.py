@@ -18,9 +18,9 @@ class Bot(object):
 ina = Bot()
 
 def main():
-    sys.path += ['plugins']  # so 'import hook' works without duplication
+    sys.path += ['plugins']  # Donc «importer crochet» fonctionne sans duplication
     sys.path += ['lib']
-    os.chdir(os.path.dirname(__file__) or '.')  # do stuff relative to the install directory
+    os.chdir(os.path.dirname(__file__) or '.')  # Faire par rapport au répertoire d'installation
 
     print 'Chargement des plugins...'
 
