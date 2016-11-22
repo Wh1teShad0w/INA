@@ -1,5 +1,5 @@
-
 #!/usr/bin/env python
+
 # Debut de INA
 import os
 import Queue
